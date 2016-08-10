@@ -111,22 +111,19 @@
     (insert contents)
 
     (goto-char (point-min))
-    (let (;; Literal newline character
-          (newline-regexp "
-"))
-      (while (re-search-forward (concat
-                                 ;; 0 or more newlines
-                                 newline-regexp "*"
-                                 ;; followed by the newline before the
-                                 ;; line containing list items
-                                 "\\(" newline-regexp "\\s-*[*+-]\\)")
-                                nil :noerror)
-        ;; Make sure that only one new line exists only before the topmost
-        ;; level list items.
-        (if (string-match-p "^\\*" (match-string-no-properties 1))
-            (replace-match "\n\\1")
-          ;; Remove all blank lines before all other list items
-          (replace-match "\\1"))))
+    (while (re-search-forward (concat
+                               ;; 0 or more newlines
+                               "\n*"
+                               ;; followed by the newline before the
+                               ;; line containing list items
+                               "\\(\n\\s-*[*+-]\\)")
+                              nil :noerror)
+      ;; Make sure that only one new line exists only before the topmost
+      ;; level list items.
+      (if (string-match-p "^\\*" (match-string-no-properties 1))
+          (replace-match "\n\\1")
+        ;; Remove all blank lines before all other list items
+        (replace-match "\\1")))
     (buffer-substring-no-properties (point-min) (point-max))))
 
 ;;;; End-user functions
