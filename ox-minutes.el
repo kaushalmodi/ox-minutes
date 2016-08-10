@@ -41,7 +41,7 @@
 ;; This package has been tested to work with the latest version of org built
 ;; from the master branch ( http://orgmode.org/cgit.cgi/org-mode.git ) as of
 ;; Aug 10 2016.
-;;
+
 ;; EXAMPLE ORG FILE:
 ;;
 ;;     #+TITLE: My notes
@@ -58,8 +58,8 @@
 ;;     - List item 2
 ;;     - List item 3
 ;;     *** More nesting
-;;
-;; ## MINUTES EXPORT:
+
+;; MINUTES EXPORT:
 ;;
 ;;                                    __________
 ;;
