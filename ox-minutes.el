@@ -6,7 +6,7 @@
 ;; URL: https://github.com/kaushalmodi/ox-minutes
 ;; Version: 0.1
 ;; Keywords: org, exporter, notes
-;; Package-Requires: ((emacs "24"))
+;; Package-Requires: ((emacs "24.4"))
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -80,6 +80,12 @@
 ;;         - List item 2
 ;;         - List item 3
 ;;         - More nesting
+
+;; REQUIREMENTS:
+;;
+;; - Emacs 24 is required at minimum for lexical binding support.
+;; - Emacs 24.4 is required as ox-ascii got added to org-mode in that Emacs
+;;   release.
 
 ;;; Code:
 

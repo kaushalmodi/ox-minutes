@@ -61,6 +61,12 @@ Aug 10 2016.
         - List item 3
         - More nesting
 
+## REQUIREMENTS
+
+- Emacs 24 is required at minimum for lexical binding support.
+- Emacs 24.4 is required as ox-ascii got added to org-mode in that Emacs
+  release.
+
 
 ---
 Converted from `ox-minutes.el` by [*el2markdown*](https://github.com/Lindydancer/el2markdown).
