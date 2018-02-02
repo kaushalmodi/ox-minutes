@@ -37,7 +37,7 @@
 ;; `org-export-with-toc' to nil time being for the exports.  That is equivalent
 ;; to manually putting the below in the org file:
 ;;
-;;     #+OPTIONS: H:0 num:nil author:nil toc:nil
+;;     #+options: H:0 num:nil author:nil toc:nil
 ;;
 ;; This package has been tested to work with the latest version of org built
 ;; from the master branch ( http://orgmode.org/cgit.cgi/org-mode.git ) as of
@@ -45,7 +45,7 @@
 
 ;; EXAMPLE ORG FILE:
 ;;
-;;     #+TITLE: My notes
+;;     #+title: My notes
 ;;
 ;;     * Heading 1
 ;;     ** Sub heading
